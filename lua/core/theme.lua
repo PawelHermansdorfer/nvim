@@ -262,21 +262,21 @@ function M.setup(opts)
 
     Group.new("FinderVirtText",     colors.fg1)
 
-        Group.new("DiagnosticError", colors.error, colors.NONE, styles.NONE)
-        Group.new("DiagnosticVirtualTextError", colors.error, colors.NONE, styles.NONE)
-        Group.new("DiagnosticUnderlineError", colors.NONE, colors.NONE, styles.undercurl, colors.error)
+    Group.new("DiagnosticError", colors.error, colors.NONE, styles.NONE)
+    Group.new("DiagnosticVirtualTextError", colors.error, colors.NONE, styles.NONE)
+    Group.new("DiagnosticUnderlineError", colors.NONE, colors.NONE, styles.undercurl, colors.error)
 
-        Group.new("DiagnosticWarn", colors.warning, colors.NONE, styles.NONE)
-        Group.new("DiagnosticVirtualTextWarn", colors.warning, colors.NONE, styles.NONE)
-        Group.new("DiagnosticUnderlineWarn", colors.NONE, colors.NONE, styles.undercurl, colors.warning)
+    Group.new("DiagnosticWarn", colors.warning, colors.NONE, styles.NONE)
+    Group.new("DiagnosticVirtualTextWarn", colors.warning, colors.NONE, styles.NONE)
+    Group.new("DiagnosticUnderlineWarn", colors.NONE, colors.NONE, styles.undercurl, colors.warning)
 
-        Group.new("DiagnosticInfo", colors.info, colors.NONE, styles.NONE)
-        Group.new("DiagnosticVirtualTextInfo", colors.info, colors.NONE, styles.NONE)
-        Group.new("DiagnosticUnderlineInfo", colors.NONE, colors.NONE, styles.undercurl, colors.info)
+    Group.new("DiagnosticInfo", colors.info, colors.NONE, styles.NONE)
+    Group.new("DiagnosticVirtualTextInfo", colors.info, colors.NONE, styles.NONE)
+    Group.new("DiagnosticUnderlineInfo", colors.NONE, colors.NONE, styles.undercurl, colors.info)
 
-        Group.new("DiagnosticHint", colors.info, colors.NONE, styles.NONE)
-        Group.new("DiagnosticVirtualTextHint", colors.info, colors.NONE, styles.NONE)
-        Group.new("DiagnosticUnderlineHint", colors.NONE, colors.NONE, styles.undercurl, colors.info)
+    Group.new("DiagnosticHint", colors.info, colors.NONE, styles.NONE)
+    Group.new("DiagnosticVirtualTextHint", colors.info, colors.NONE, styles.NONE)
+    Group.new("DiagnosticUnderlineHint", colors.NONE, colors.NONE, styles.undercurl, colors.info)
     return M
 end
 

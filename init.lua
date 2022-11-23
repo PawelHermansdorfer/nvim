@@ -27,6 +27,8 @@
 -- TODO(Aa_Pawelek): Remap ; to : and : to ;
 
 -- Other
+-- TODO(Aa_Pawelek): new formattings fucntion
+-- TODO(Aa_Pawelek): Packer reinstallings itself
 -- TODO(Aa_Pawelek): Null-ls (autopep8)
 -- TODO(Aa_Pawelek): Lualine
 -- TODO(Aa_Pawelek): Find word under cursor with telescope

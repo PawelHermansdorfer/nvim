@@ -43,7 +43,7 @@ local capabilities = require('cmp_nvim_lsp').default_capabilities()
 -- LUA --
 nvim_lsp.sumneko_lua.setup {
     capabilities = capabilities,
-    single_file_support = true,
+    single_file_support = false,
     settings = {
         Lua = {
             runtime = {
@@ -70,7 +70,8 @@ nvim_lsp.sumneko_lua.setup {
 nvim_lsp.pyright.setup {
     capabilities = capabilities,
     root_dir = nvim_lsp.util.root_pattern('main.py'),
-    settings     = {
+    filetypes = { "python" },
+    settings = {
         python = {
             analysis = {
                 autoSearchPaths = true,

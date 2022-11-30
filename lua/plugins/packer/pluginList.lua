@@ -3,7 +3,6 @@ local M = {}
 
 M.packer = {
     "wbthomason/packer.nvim",
-    event = "BufRead",
 }
 
 M.popup = {
@@ -46,7 +45,7 @@ M.auto_save = {
     -- Auto save
     "Pocco81/auto-save.nvim",
     event = "BufRead",
-    require = function()
+    config = function()
         require "plugins.configs.auto_save"
     end
 }
@@ -135,26 +134,28 @@ M.telescope = {
     end
 }
 
-M.kommentary = {
+M.nvim_comment = {
     -- Line comments
-    "b3nj5m1n/kommentary",
-    event = "BufRead",
+    "terrortylor/nvim-comment",
+    cmd = "CommentToggle",
     config = function()
-        require "plugins.configs.kommentary"
+        require "plugins.configs.nvim_comment"
     end,
     setup = function()
-        require("core").load_mappings "kommentary"
+        require("core").load_mappings "nvim_comment"
     end
 }
 
-
 M.ipy = {
-   -- Jupyter qtconsole
+    -- Jupyter qtconsole
     "bfredl/nvim-ipy",
-    run = ":UpdateRemotePlugin",
+    run = ":UpdateRemotePlugins",
     ft = "python",
+    requires = {
+        "jpalardy/vim-slime"
+    },
     configa = function()
-        vim.g.ipy_celldef = '# Cell'
+        vim.g.ipy_celldef = "# Cell"
     end,
     setup = function()
         require("core").load_mappings "ipy"
@@ -174,10 +175,34 @@ M.impatient = {
 M.notify = {
     "rcarriga/nvim-notify",
     config = function()
-        --[[ require("notify").setup()
-        vim.notify = require("notify") ]]
         require "plugins.configs.notify"
     end
+}
+
+M.fine_cmdline = {
+    enabled = false,
+    "VonHeikemen/fine-cmdline.nvim",
+    cmd = "FineCmdline",
+    requires = {
+        { "MunifTanjim/nui.nvim" }
+    },
+    setup = function()
+        require("core").load_mappings "fine_cmdline"
+    end,
+    config = function()
+        require "plugins.configs.fine_cmdline"
+    end,
+}
+
+M.noice = {
+    "folke/noice.nvim",
+    config = function()
+        require "plugins.configs.noice"
+    end,
+    requires = {
+        "MunifTanjim/nui.nvim",
+        "rcarriga/nvim-notify",
+    }
 }
 
 -- =============== LSP ===============
@@ -241,7 +266,7 @@ M.lspkind = {
 M.nvim_cmp = {
     "hrsh7th/nvim-cmp",
     event  = { "BufNewFile", "BufRead", "InsertEnter" },
-    config =function()
+    config = function()
         require "plugins.configs.cmp"
     end
 }

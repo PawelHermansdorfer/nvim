@@ -5,5 +5,6 @@ if not status then vim.notify("Failed to load: " .. plugin_name, "error", { titl
 plugin.setup({
     sources = {
         plugin.builtins.formatting.autopep8.with({ extra_args = { '--aggressive', '--aggressiv' } }),
-    }
+    },
+    update_in_insert = false,
 })

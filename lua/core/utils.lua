@@ -38,7 +38,7 @@ vim.api.nvim_create_user_command("RunQtConsole", function()
         command = command .. param .. " "
     end
     command = command .. '")'
-    vim.notify("Opening QtConsole.\nRemember to connect to created kernel", "info", { title = "Python QtConsole" })
+    vim.notify("Opening QtConsole.\nRemember to connect to created kernel and run :UpdateRemotePlugins", "info", { title = "Python QtConsole" })
     vim.api.nvim_command(command)
 end, {})
 

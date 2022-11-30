@@ -41,12 +41,12 @@ cmp.setup {
     },
     window = {
         completion = {
-            border = 'single',
+            border = 'rounded',
             winhighlight = 'Normal:NormalFloat,Border:FloatBorder',
             scrollbar = false,
         },
         documentation = {
-            border = 'single',
+            border = 'rounded',
             winhighlight = 'Normal:NormalFloat,Border:FloatBorder',
             scrollbar = false,
         }

@@ -14,7 +14,7 @@ M.load_mappings = function(section, opts)
 
   local mappings = section ~= nil  and mappings_congig[section] or mappings_congig["general"]
 
-  local mappings_opts = opts ~= nil and opts or { noremap = true, silent = true }
+  local mappings_opts = opts ~= nil and opts or { noremap = false, silent = false }
   for mode, bindings in pairs(mappings) do
       for key, command in pairs(bindings) do
           mappings_opts["desc"] = command[2]

@@ -16,6 +16,7 @@ local M = {}
 
 M.general = {
     n = {
+        [";"] = { ":" },
         ["<Space>"] = { "<Nop>" },
 
         ["ss"] = { "<CMD>split<RETURN>" }, -- horizontal split
@@ -41,13 +42,13 @@ M.general = {
         ["<LEADER>u"] = { "<CMD>set hlsearch!<CR>" }, -- Hide search highlight
         ["<LEADER>s"] = { "<CMD>set spell!<CR>" }, -- Hide search highlight
 
+        ["<LEADER>a"] = { "ggVG" },
+
         ["S"] = { ":%s//g<Left><Left>" }, -- Replace shrtcut
 
         ["<Leader>r"] = { "<CMD>Run<CR>" },
         ["<Leader>b"] = { "<CMD>Build<CR>" },
         ["<Leader>bb"] = { "<CMD>BuildRun<CR>" },
-
-        ["<LEADER>rq"] = { "<CMD>RunQtConsole<CR>" },
     },
     x = {
         ["H"] = { "<gv" },
@@ -56,7 +57,7 @@ M.general = {
         ["J"] = { ":move '>+1<CR>gv-gv" },
 
         -- Sort lines
-        ["<LEADER>s"] = { "<CMD>'<,'>sort<CR><ESC>" },
+        ["<LEADER>s"] = { ":<C-u>'<,'>sort<CR>" },
 
         -- Replace
         ["S"] = { ":s//g<Left><Left>" },
@@ -67,10 +68,11 @@ M.general = {
 M.telescope = {
     n = {
         ['sf'] = { "<cmd>Telescope find_files<CR>", "find files" }, -- show files
-        ["sb"] = { "<cmd>Telescope buffers<CR>", "find buffers" },-- show buffers
+        ["sb"] = { "<cmd>Telescope buffers<CR>", "find buffers" }, -- show buffers
         ["sd"] = { "<cmd>Telescope diagnostics<CR>", "find buffers" }, -- show diagnostics
-        ["<LEADER>g"] =  { "<cmd>Telescope live_grep<CR>", "live grep" }, -- grep
-        ["<LEADER>h"] =  { "<cmd>Telescope help_tags<CR>", "help page" },
+        ["<LEADER>g"] = { "<cmd>Telescope live_grep<CR>", "live grep" }, -- grep
+        ["<LEADER>h"] = { "<cmd>Telescope help_tags<CR>", "help page" },
+        ["<LEADER>w"] = { "<cmd>Telescope grep_string<CR>", "help page" },
     }
 }
 
@@ -91,7 +93,7 @@ M.lspsaga = {
         ["<LEADER>d"] = { "<CMD>Lspsaga diagnostic_jump_next<CR>" },
         ["K"] = { "<CMD>Lspsaga hover_doc<CR>" },
         ["R"] = { "<CMD>Lspsaga rename<CR>" },
-        ["<LEADER>a"] = { "<CMD>Lspsaga code_action<CR>" },
+        ["<LEADER>q"] = { "<CMD>Lspsaga code_action<CR>" },
     }
 }
 
@@ -104,29 +106,41 @@ M.nvim_tree = {
 
 M.lspconfig = {
     n = {
-        ["<LEADER>F"] = { "<CMD>lua vim.lsp.buf.formatting_sync()<CR>" },
+        ["<LEADER>F"] = { "<CMD>lua vim.lsp.buf.format()<CR>" },
     }
 }
 
 
-M.kommentary = {
+M.nvim_comment = {
     n = {
-        ["<LEADER>c"] = { "<PLUG>kommentary_line_default" },
+        ["<LEADER>c"] = { "<CMD>CommentToggle<CR>" },
         -- TODO/NOTE
-        ["<LEADER>t"] = { "OTODO(Aa_Pawelek): <ESC><PLUG>kommentary_line_default A" },
-        ["<LEADER>y"] = { "ONOTE(Aa_Pawelek): <ESC><PLUG>kommentary_line_default A" },
+        ["<LEADER>t"] = { "OTODO(Aa_Pawelek): <ESC><CMD>CommentToggle<CR> A" },
+        ["<LEADER>y"] = { "ONOTE(Aa_Pawelek): <ESC><CMD>CommentToggle<CR> A" },
     },
     x = {
-        ["<LEADER>c"] = { "<PLUG>kommentary_visual_default<C-c>" }
+        ["<LEADER>c"] = { ":<C-u>'<,'>CommentToggle<CR>" }
     }
 }
 
 
 M.ipy = {
     n = {
-        ["<LEADER>cq"] = { "<CMD>IPython<Space>--existing<Space>--no-window<Enter><CR>" },
-        ["<LEADER>rc"] = { "<Plug>(IPy-RunCell)" },
+        ["<LEADER>rqt"] = { "<CMD>RunQtConsole<CR>" },
+        ["<LEADER>rq"] = { "<CMD>IPython<Space>--existing<Space>--no-window<Enter><CR>" },
+        ["<LEADER>rr"] = { "<Plug>(IPy-RunCell)" },
         ["<LEADER>ra"] = { "<Plug>(IPy-RunAll)" },
+    }
+}
+
+M.fine_cmdline = {
+    n = {
+        [":"] = { "<cmd>FineCmdline<CR>" },
+        [";"] = { "<cmd>FineCmdline<CR>" }
+    },
+    x = {
+        [":"] = { ":<C-u>FineCmdline '<,'> <CR>" },
+        [";"] = { ":<C-u>FineCmdline '<,'> <CR>" }
     }
 }
 

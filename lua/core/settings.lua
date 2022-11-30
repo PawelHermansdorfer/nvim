@@ -36,7 +36,7 @@ opt.scrolloff = 8
 opt.sidescrolloff = 8
 opt.laststatus = 3 -- global statusline
 opt.showcmd = true
-opt.cmdheight = 1
+opt.cmdheight = 1 -- height of command line 
 
 opt.backup = false
 opt.backupskip = { "/tmp/*", "/private/tmp/*" }

@@ -1,15 +1,15 @@
 --             Mode  | Norm | Ins | Cmd | Vis | Sel | Opr | Term | Lang |
 --    Command        +------+-----+-----+-----+-----+-----+------+------+
--- "" [nore]map      | yes  |  -  |  -  | yes | yes | yes |  -   |  -   |
--- n  n[nore]map     | yes  |  -  |  -  |  -  |  -  |  -  |  -   |  -   |
 -- !  [nore]map!     |  -   | yes | yes |  -  |  -  |  -  |  -   |  -   |
--- i  i[nore]map     |  -   | yes |  -  |  -  |  -  |  -  |  -   |  -   |
+-- "" [nore]map      | yes  |  -  |  -  | yes | yes | yes |  -   |  -   |
 -- c  c[nore]map     |  -   |  -  | yes |  -  |  -  |  -  |  -   |  -   |
+-- i  i[nore]map     |  -   | yes |  -  |  -  |  -  |  -  |  -   |  -   |
+-- n  n[nore]map     | yes  |  -  |  -  |  -  |  -  |  -  |  -   |  -   |
+-- o  o[nore]map     |  -   |  -  |  -  |  -  |  -  | yes |  -   |  -   |
+-- s  s[nore]map     |  -   |  -  |  -  |  -  | yes |  -  |  -   |  -   |
+-- t  t[nore]map     |  -   |  -  |  -  |  -  |  -  |  -  | yes  |  -   |
 -- v  v[nore]map     |  -   |  -  |  -  | yes | yes |  -  |  -   |  -   |
 -- x  x[nore]map     |  -   |  -  |  -  | yes |  -  |  -  |  -   |  -   |
--- s  s[nore]map     |  -   |  -  |  -  |  -  | yes |  -  |  -   |  -   |
--- o  o[nore]map     |  -   |  -  |  -  |  -  |  -  | yes |  -   |  -   |
--- t  t[nore]map     |  -   |  -  |  -  |  -  |  -  |  -  | yes  |  -   |
 -- l  l[nore]map     |  -   | yes | yes |  -  |  -  |  -  |  -   | yes  |
 
 local M = {}
@@ -51,13 +51,15 @@ M.general = {
         ["<Leader>bb"] = { "<CMD>BuildRun<CR>" },
     },
     x = {
-        ["H"] = { "<gv" },
+        [";"] = { ":" },
+
         ["L"] = { ">gv" },
-        ["K"] = { ":move '<-2<CR>gv-gv" },
-        ["J"] = { ":move '>+1<CR>gv-gv" },
+        ["H"] = { "<gv" },
+        ["K"] = { "<ESC><CMD>move '<-2<CR>gv-gv" },
+        ["J"] = { "<ESC><CMD>move '>+1<CR>gv-gv" },
 
         -- Sort lines
-        ["<LEADER>s"] = { ":<C-u>'<,'>sort<CR>" },
+        ["<LEADER>s"] = { "<ESC><CMD>'<,'>sort<CR>" },
 
         -- Replace
         ["S"] = { ":s//g<Left><Left>" },
@@ -119,7 +121,7 @@ M.nvim_comment = {
         ["<LEADER>y"] = { "ONOTE(Aa_Pawelek): <ESC><CMD>CommentToggle<CR> A" },
     },
     x = {
-        ["<LEADER>c"] = { ":<C-u>'<,'>CommentToggle<CR>" }
+        ["<LEADER>c"] = { "<ESC><CMD>'<,'>CommentToggle<CR>" }
     }
 }
 
@@ -130,17 +132,6 @@ M.ipy = {
         ["<LEADER>rq"] = { "<CMD>IPython<Space>--existing<Space>--no-window<Enter><CR>" },
         ["<LEADER>rr"] = { "<Plug>(IPy-RunCell)" },
         ["<LEADER>ra"] = { "<Plug>(IPy-RunAll)" },
-    }
-}
-
-M.fine_cmdline = {
-    n = {
-        [":"] = { "<cmd>FineCmdline<CR>" },
-        [";"] = { "<cmd>FineCmdline<CR>" }
-    },
-    x = {
-        [":"] = { ":<C-u>FineCmdline '<,'> <CR>" },
-        [";"] = { ":<C-u>FineCmdline '<,'> <CR>" }
     }
 }
 

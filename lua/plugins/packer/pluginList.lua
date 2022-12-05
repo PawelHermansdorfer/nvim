@@ -186,9 +186,6 @@ M.fine_cmdline = {
     requires = {
         { "MunifTanjim/nui.nvim" }
     },
-    setup = function()
-        require("core").load_mappings "fine_cmdline"
-    end,
     config = function()
         require "plugins.configs.fine_cmdline"
     end,

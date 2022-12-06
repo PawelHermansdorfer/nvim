@@ -25,7 +25,6 @@
 local M = {}
 
 function M.setup(opts)
-    vim.cmd [[ packadd! colorbuddy.nvim ]]
     vim.g.colors_name = "darkwood"
 
     local plugin_name = "colorbuddy"

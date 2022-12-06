@@ -46,7 +46,7 @@ end, {})
 local lang_maps
 if vim.fn.has("win32") ~= 0 then -- Commands on Windows
     lang_maps = {
-        c = { build = "pushd .\\build&&cmake --build .&&popd", run = ".\\build\\main.exe" }, -- cmake .. -G "MinGW Makefiles"
+        c = { build = "pushd .\\build&&cmake --build .&&popd", run = "pushd .\\build\\ && main.exe && popd" }, -- cmake .. -G "MinGW Makefiles"
         python = { run = "python .\\main.py" },
     }
 elseif vim.fn.has("macunix") ~= 0 then -- Commands on MacOS

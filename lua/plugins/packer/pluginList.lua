@@ -1,6 +1,5 @@
 local M = {}
 
-
 M.packer = {
     "wbthomason/packer.nvim",
 }
@@ -296,6 +295,5 @@ M.lsp_signature = {
         require "plugins.configs.lsp_signature"
     end
 }
-
 
 return M

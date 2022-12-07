@@ -11,7 +11,6 @@ M.popup = {
 
 M.plenary = {
     "nvim-lua/plenary.nvim",
-    event = "BufRead"
 }
 
 M.web_devicons = {

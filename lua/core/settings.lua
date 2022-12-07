@@ -36,7 +36,7 @@ opt.scrolloff = 8
 opt.sidescrolloff = 8
 opt.laststatus = 3 -- global statusline
 opt.showcmd = true
-opt.cmdheight = 1 -- height of command line 
+opt.cmdheight = 1 -- height of command line
 
 opt.backup = false
 opt.backupskip = { "/tmp/*", "/private/tmp/*" }
@@ -59,7 +59,7 @@ opt.completeopt = { "menuone", "noselect" } -- mostly just for cmp
 opt.conceallevel = 0 -- so that `` is visible in markdown files
 opt.timeoutlen = 300 -- time to wait for a mapped sequence to complete (in milliseconds)
 
-opt.lazyredraw = false  
+opt.lazyredraw = false
 opt.updatetime = 300 -- faster completion (4000ms default)
 opt.wildoptions = 'pum'
 opt.winblend = 0
@@ -79,10 +79,10 @@ if fn.has("termguicolors") then
 end
 g.t_Co = "256"
 opt.background = 'dark'
-opt.guifont = {"JetBrains Mono", ":h11"}
+opt.guifont = { "JetBrains Mono", ":h11" }
 
 -- Disable autocommenting
-vim.api.nvim_create_autocmd({"BufEnter"}, {
+vim.api.nvim_create_autocmd({ "BufEnter" }, {
     pattern = "*",
     callback = function()
         opt.formatoptions = ""
@@ -96,9 +96,33 @@ vim.api.nvim_create_autocmd("InsertLeave", {
 })
 
 if vim.fn.has "win32" then
+    g.clipboard =  {
+        cache_enabled = 0,
+        copy = {
+            ["*"] = "win32yank.exe -i --crlf",
+            ["+"] = "win32yank.exe -i --crlf"
+        },
+        name = "win32yank",
+        paste = {
+            ["*"] = "win32yank.exe -o --lf",
+            ["+"] = "win32yank.exe -o --lf"
+        }
+    }
     opt.clipboard:prepend { "unnamed", "unnamedplus" }
     opt.shell = "cmd"
 elseif vim.fn.has "macunix" then
+    g.clipboard = {
+        cache_enabled = 0,
+        copy = {
+            ["*"] = "pbcopy",
+            ["+"] = "pbcopy"
+        },
+        name = "win32yank",
+        paste = {
+            ["*"] = "pbpaste",
+            ["+"] = "pbpaste"
+        }
+    }
     opt.clipboard:append { "unnamedplus" }
     opt.shell = "fish"
 else

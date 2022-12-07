@@ -1,0 +1,302 @@
+000.004: --- NVIM STARTED ---
+000.004: waiting for UI
+000.006: editing files in windows
+000.007: UIEnter autocommands
+000.014: parsing arguments
+000.027: --- NVIM STARTING ---
+000.028: init default autocommands
+000.031  000.031: require('vim.F')
+000.034: inits 3
+000.038: clear screen
+000.047  000.047: sourcing C:\Users\PawelHermansdorfer\scoop\apps\neovim-nightly\current\share\nvim\runtime\plugin\tohtml.vim
+000.049  000.049: sourcing C:\Users\PawelHermansdorfer\scoop\apps\neovim-nightly\current\share\nvim\runtime\plugin\netrwPlugin.vim
+000.054  000.054: sourcing C:\Users\PawelHermansdorfer\scoop\apps\neovim-nightly\current\share\nvim\runtime\plugin\spellfile.vim
+000.058  000.058: sourcing C:\Users\PawelHermansdorfer\scoop\apps\neovim-nightly\current\share\nvim\runtime\plugin\tarPlugin.vim
+000.058: inits 2
+000.078  000.078: require('vim.keymap')
+000.079  000.079: sourcing C:\Users\PawelHermansdorfer\scoop\apps\neovim-nightly\current\share\nvim\runtime\plugin\tutor.vim
+000.081  000.081: sourcing C:\Users\PawelHermansdorfer\scoop\apps\neovim-nightly\current\share\nvim\runtime\plugin\matchit.vim
+000.087  000.087: sourcing C:\Users\PawelHermansdorfer\scoop\apps\neovim-nightly\current\share\nvim\runtime\plugin\zipPlugin.vim
+000.088  000.088: require('bufferline.lazy')
+000.089  000.089: sourcing C:\Users\PawelHermansdorfer\scoop\apps\neovim-nightly\current\share\nvim\runtime\plugin\gzip.vim
+000.091  000.091: require('noice.util.lazy')
+000.091  000.091: require('notify.animate.spring')
+000.091  000.091: sourcing C:\Users\PawelHermansdorfer\scoop\apps\neovim-nightly\current\share\nvim\runtime\plugin\health.vim
+000.092  000.092: require('colorbuddy.execute')
+000.093  000.093: require('mason-core.async.uv')
+000.093  000.093: require('mason-core.functional.data')
+000.093  000.093: require('mason-core.providers')
+000.095  000.095: require('mason-core.functional.logic')
+000.095: expanding arguments
+000.096  000.096: require('mason-core.EventEmitter')
+000.098  000.098: require('mason-core.functional.relation')
+000.098  000.098: require('mason-core.optional')
+000.098  000.098: require('notify.util.queue')
+000.098  000.098: require('null-ls.builtins')
+000.099  000.099: require('bufferline.constants')
+000.099  000.099: require('nvim-autopairs._log')
+000.100  000.100: require('noice.config.cmdline')
+000.100  000.100: sourcing C:\Users\PawelHermansdorfer\AppData\Local\nvim-data\site\pack\packer\start\winbar.nvim\plugin\winbar.lua
+000.101  000.101: require('mason-lspconfig.settings')
+000.101  000.101: require('noice.config.icons')
+000.102  000.102: require('lspconfig')
+000.102  000.102: require('mason-core.functional.table')
+000.102  000.102: require('mason-core.result')
+000.102  000.102: require('null-ls.helpers.command_resolver')
+000.102  000.102: require('plugins.utils.notify_spinner')
+000.102  000.102: require('winbar.config')
+000.102  000.102: require('winbar.utils')
+000.103  000.103: require('cmp_nvim_lsp.source')
+000.104  000.104: require('notify.stages')
+000.104  000.104: require('null-ls.helpers.range_formatting_args_factory')
+000.105  000.105: require('noice.util.call')
+000.105  000.105: require('notify.stages.fade_in_slide_out')
+000.106  000.106: require('bufferline.colors')
+000.106  000.106: require('colorbuddy.modifiers')
+000.106  000.106: require('mason-core.async')
+000.106  000.106: require('mason-core.managers.git')
+000.106  000.106: require('mason-core.path')
+000.106  000.106: require('mason-lspconfig.server_config_extensions')
+000.107  000.107: require('mason-core.functional.number')
+000.107  000.107: require('null-ls.logger')
+000.108  000.108: require('core')
+000.109  000.109: require('noice.view.backend.popup')
+000.109  000.109: require('notify.service.buffer.highlights')
+000.109  000.109: require('notify.stages.util')
+000.110  000.110: require('mason-core.managers.std')
+000.110  000.110: require('mason-lspconfig.ensure_installed')
+000.112  000.112: require('nvim-autopairs.conds')
+000.113  000.113: require('notify.service.notification')
+000.115  000.115: require('noice.config.routes')
+000.115  000.115: require('noice.lsp.message')
+000.115  000.115: require('nvim-autopairs.utils')
+000.116  000.116: require('colorbuddy.style')
+000.118  000.118: require('lspconfig.server_configurations.sumneko_lua')
+000.118  000.118: require('mason-core.managers.powershell')
+000.118  000.118: require('noice.config.format')
+000.119  000.119: require('noice.config.preset')
+000.122  000.122: require('mason-core.async.control')
+000.123  000.123: require('lspconfig.server_configurations.omnisharp')
+000.123: init first window
+000.124  000.124: require('mason-lspconfig.win-exepath-compat')
+000.126  000.126: require('noice.config.highlights')
+000.126  000.126: require('noice.ui.msg')
+000.127  000.127: require('mason-registry.clangd')
+000.128  000.128: require('lspconfig.configs')
+000.128  000.128: require('mason-core.notify')
+000.128  000.128: sourcing C:\Users\PawelHermansdorfer\scoop\apps\neovim-nightly\current\share\nvim\runtime\plugin\man.lua
+000.130  000.130: require('mason-core.installer.linker')
+000.131  000.131: require('bufferline.highlights')
+000.131  000.131: require('lualine_require')
+000.131  000.131: require('mason-core.functional')
+000.132  000.132: require('noice.commands')
+000.132  000.132: require('noice.ui.popupmenu')
+000.133  000.133: require('mason-registry.index')
+000.134  000.134: require('vim.lsp.diagnostic')
+000.135  000.135: require('bufferline.commands')
+000.135  000.135: require('colorbuddy.util')
+000.135  000.135: require('mason-core.installer.handle')
+000.136  000.136: require('null-ls.diagnostics')
+000.137  000.137: require('null-ls.state')
+000.137  000.137: require('vim.lsp.codelens')
+000.138  000.138: require('mason-core.managers.go')
+000.138  000.138: require('vim.highlight')
+000.139  000.139: require('lspconfig.server_configurations.clangd')
+000.140  000.140: require('vim.lsp.sync')
+000.141  000.141: require('mason-core.log')
+000.141  000.141: require('nui.object')
+000.142  000.142: require('lspsaga.lspkind')
+000.143  000.143: require('bufferline.hover')
+000.143  000.143: require('lspconfig.server_configurations.pyright')
+000.143  000.143: require('mason-registry.lua-language-server')
+000.145  000.145: require('null-ls.helpers.formatter_factory')
+000.146  000.146: require('mason-core.functional.string')
+000.147  000.147: require('mason-registry.pyright')
+000.148  000.148: require('bufferline.groups')
+000.148  000.148: require('mason-core.managers.composer')
+000.148  000.148: require('noice.ui')
+000.149  000.149: require('noice.source.notify')
+000.149  000.149: require('null-ls.helpers.cache')
+000.150  000.150: require('bufferline.state')
+000.150  000.150: require('nui.layout.utils')
+000.150  000.150: require('packer.load')
+000.150  000.150: require('packer.snapshot')
+000.150  000.150: sourcing C:\Users\PawelHermansdorfer\scoop\apps\neovim-nightly\current\share\nvim\runtime\indent.vim
+000.152  000.152: require('core.utils')
+000.153  000.153: require('noice.config.views')
+000.153  000.153: require('noice.util.hacks')
+000.154  000.154: sourcing C:\Users\PawelHermansdorfer\AppData\Local\nvim-data\site\pack\packer\start\nvim-web-devicons\plugin\nvim-web-devicons.vim
+000.155  000.155: require('noice.message.router')
+000.156  000.156: require('mason-core.managers.luarocks')
+000.158  000.158: require('lspsaga')
+000.158  000.158: require('null-ls.builtins.formatting.autopep8')
+000.160  000.160: require('mason-registry.omnisharp')
+000.162  000.162: require('mason-core.managers.pip3')
+000.163  000.163: require('mason-core.managers.gem')
+000.164  000.164: require('colorbuddy.log')
+000.166  000.166: require('mason-core.receipt')
+000.167  000.167: require('noice.config')
+000.169  000.169: require('impatient.profile')
+000.171  000.171: require('mason-core.functional.list')
+000.171  000.171: require('noice.message.filter')
+000.171  000.171: require('vim.lsp.buf')
+000.172  000.172: require('noice.view.backend.split')
+000.173  000.173: require('lspconfig.ui.windows')
+000.173  000.173: require('noice.view.backend.mini')
+000.174  000.174: require('noice.view.nui')
+000.174  000.174: require('nui.utils')
+000.176  000.176: sourcing C:\Users\PawelHermansdorfer\AppData\Local\nvim-data\site\pack\packer\start\plenary.nvim\plugin\plenary.vim
+000.180  000.180: require('plugins.packer.pluginList')
+000.185  000.185: require('lsp_signature.helper')
+000.186  000.186: sourcing C:\Users\PawelHermansdorfer\AppData\Local\nvim-data\site\pack\packer\opt\nvim-lspconfig\plugin\lspconfig.lua
+000.188: early init
+000.188: event init
+000.196  000.196: require('bufferline.utils')
+000.197  000.197: require('bufferline.ui')
+000.197  000.197: require('lualine.highlight')
+000.199  000.199: require('noice.lsp')
+000.200  000.200: sourcing C:\Users\PawelHermansdorfer\AppData\Local\nvim-data\site\pack\packer\start\cmp-nvim-lsp\after\plugin\cmp_nvim_lsp.lua
+000.204  000.204: require('bufferline.config')
+000.204  000.204: require('noice.text.block')
+000.205  000.205: require('packer.result')
+000.206  000.115: require('noice')
+000.206  000.206: require('packer.util')
+000.208  000.208: require('noice.util.stats')
+000.208  000.208: require('vim.lsp._snippet')
+000.209  000.209: require('notify.config.highlights')
+000.210  000.210: require('null-ls.helpers.diagnostics')
+000.212  000.119: require('mason-core.functional.function')
+000.217  000.217: sourcing C:\Users\PawelHermansdorfer\scoop\apps\neovim-nightly\current\share\nvim\runtime\ftplugin.vim
+000.223  000.117: require('mason.settings')
+000.224  000.122: require('null-ls.helpers.make_builtin')
+000.225  000.134: require('notify.animate')
+000.226  000.117: require('notify.service.buffer')
+000.226  000.124: require('winbar')
+000.229  000.229: require('mason-core.managers.npm')
+000.231  000.231: require('plugins')
+000.233  000.121: require('nvim-autopairs.rule')
+000.235  000.235: sourcing C:\Users\PawelHermansdorfer\scoop\apps\neovim-nightly\current\share\nvim\runtime\syntax\synload.vim
+000.237  000.111: require('noice.config.status')
+000.240  000.136: require('noice.util')
+000.241  000.124: require('mason-core.fetch')
+000.241  000.138: require('cmp_nvim_lsp')
+000.241  000.143: require('notify.util')
+000.244  000.244: require('noice.view.backend.notify')
+000.246: init default mappings
+000.247  000.247: sourcing C:\Users\PawelHermansdorfer\scoop\apps\neovim-nightly\current\share\nvim\runtime\plugin\shada.vim
+000.248  000.248: require('mason-core.process')
+000.249  000.249: require('lualine.utils.mode')
+000.252  000.123: require('mason-lspconfig.lspconfig_hook')
+000.252  000.252: sourcing C:\Users\PawelHermansdorfer\AppData\Local\nvim-data\site\pack\packer\start\plenary.nvim\plugin\plenary.vim
+000.253  000.160: require('mason-core.managers.github.client')
+000.254  000.118: require('null-ls.sources')
+000.254  000.254: require('lspconfig.util')
+000.266  000.266: require('vim.lsp.rpc')
+000.271  000.271: require('vim.lsp.log')
+000.278  000.278: require('packer.log')
+000.279  000.172: require('mason-lspconfig.api.command')
+000.287  000.287: require('core.theme')
+000.289  000.289: require('core.mappings')
+000.291  000.291: sourcing C:\Users\PawelHermansdorfer\scoop\apps\neovim-nightly\current\share\nvim\runtime\autoload\remote\define.vim
+000.294  000.153: require('mason-lspconfig')
+000.295  000.295: require('mason-lspconfig.server_configurations.omnisharp')
+000.295  000.295: require('vim._meta')
+000.306  000.132: require('noice.util.nui')
+000.311  000.170: require('noice.view')
+000.320  000.121: require('mason-core.fs')
+000.322  000.220: require('mason-lspconfig.mappings.server')
+000.323  000.172: require('nui.split.utils')
+000.323  000.323: require('null-ls.methods')
+000.326  000.121: require('packer.jobs')
+000.346  000.346: require('vim.shared')
+000.353  000.120: require('nvim-autopairs.rules.basic')
+000.353  000.353: require('noice.ui.state')
+000.353: BufEnter autocommands
+000.357  000.131: require('notify.windows')
+000.361  000.254: require('colorbuddy.color')
+000.362  000.362: require('vim.lsp.protocol')
+000.370  000.200: require('mason.api.command')
+000.373  000.130: require('null-ls.helpers.generator_factory')
+000.378  000.137: require('mason-core.managers.cargo.client')
+000.382  000.156: require('notify.service')
+000.392  000.114: require('packer.async')
+000.392  000.361: require('nvim-web-devicons')
+000.400  000.400: sourcing C:\Users\PawelHermansdorfer\scoop\apps\neovim-nightly\current\share\nvim\runtime\plugin\matchparen.vim
+000.411  000.411: sourcing C:\Users\PawelHermansdorfer\scoop\apps\neovim-nightly\current\share\nvim\runtime\autoload\remote\host.vim
+000.415  000.415: sourcing C:\Users\PawelHermansdorfer\AppData\Local\nvim-data\site\pack\packer\start\vim-slime\plugin\slime.vim
+000.496  000.311: require('lsp_signature')
+000.514  000.308: require('packer')
+000.533  000.533: sourcing C:\Users\PawelHermansdorfer\scoop\apps\neovim-nightly\current\share\nvim\runtime\autoload\provider\clipboard.vim
+000.546  000.184: require('mason-core.managers.github')
+000.556  000.256: require('plugins.configs.lspsaga')
+000.567  000.159: require('noice.health')
+000.571: window checked
+000.574  000.253: require('bufferline')
+000.587  000.137: require('notify.config')
+000.592: opening buffers
+000.597  000.222: require('noice.message')
+000.604  000.604: sourcing C:\Users\PawelHermansdorfer\AppData\Local\nvim-data\site\pack\packer\opt\lspsaga.nvim\plugin\lspsaga.lua
+000.623  000.277: require('vim.lsp.util')
+000.662: init highlight
+000.667  000.171: require('plugins.configs.lsp_signature')
+000.748  000.182: require('nvim-autopairs')
+000.759  000.464: require('vim._editor')
+000.765  000.442: require('null-ls.utils')
+000.787  000.141: require('mason-registry')
+000.790  000.255: require('mason-core.platform')
+000.808  000.808: require('noice.message.manager')
+000.818  000.221: require('noice.ui.cmdline')
+000.849: inits 1
+000.869  000.151: require('packer.plugin_utils')
+000.918  000.918: require('vim.diagnostic')
+000.927  000.154: require('plugins.configs.noice')
+000.927  000.927: sourcing C:\Users\PawelHermansdorfer\scoop\apps\neovim-nightly\current\share\nvim\runtime\filetype.lua
+001.009: init lua interpreter
+001.026  000.158: require('colorbuddy.group')
+001.067  000.143: require('mason-core.managers.cargo')
+001.123: first screen update
+001.124  000.112: require('mason')
+001.138  000.112: require('colorbuddy')
+001.217  001.086: require('lualine')
+001.237  000.132: require('vim._init_packages')
+001.268  001.268: require('core.settings')
+001.290  001.055: sourcing C:\Users\PawelHermansdorfer\scoop\apps\neovim-nightly\current\share\nvim\runtime\syntax\syntax.vim
+001.425  000.219: require('null-ls.helpers')
+001.440  000.692: require('plugins.configs.autopairs')
+001.468  000.213: require('vim.lsp.handlers')
+001.824  000.174: require('notify')
+001.994  000.499: require('plugins.configs.mason')
+002.137  000.604: require('plugins.packer.packerInit')
+002.232  000.549: require('null-ls.config')
+002.298  000.267: require('plugins.configs.notify')
+002.409  000.240: require('mason-core.package.version-check')
+002.491  000.174: require('plugins.packer')
+002.643  000.327: require('vim.lsp')
+002.780  000.137: require('null-ls.client')
+003.021  003.021: require('plugins.configs.web_devicons')
+004.008  002.309: require('plugins.configs.bufferline')
+004.228  000.220: require('null-ls')
+004.567: reading ShaDa
+005.640: done waiting for UI
+005.713: sourcing vimrc file(s)
+006.126: loading after plugins
+006.219: loading packages
+007.064  006.571: require('winbar.winbar')
+007.180: VimEnter autocommands
+007.548  000.257: require('plugins.configs.winbar')
+007.776  000.611: require('plugins.configs.null_ls')
+008.136  007.434: sourcing C:\Users\PawelHermansdorfer\AppData\Local\nvim-data/rplugin.vim
+008.547: before starting main loop
+008.635  008.635: require('impatient')
+008.781  000.646: sourcing C:\Users\PawelHermansdorfer\scoop\apps\neovim-nightly\current\share\nvim\runtime\plugin\rplugin.vim
+009.417  009.168: require('mason-core.spawn')
+009.986  000.258: require('mason-core.installer.context')
+010.484  000.143: require('mason-core.installer')
+013.175  000.147: require('mason-core.package')
+015.065: loading rtp plugins
+015.528  014.316: require('plugins.configs.lspconfig')
+017.076  015.413: require('plugins.configs.lualine')
+017.430  000.799: require('plugins.configs.mason_lspconfig')
+021.582  006.735: sourcing C:\Users\PawelHermansdorfer\AppData\Local\nvim\init.lua
+021.915: locale set
+096.624  015.389: sourcing C:\Users\PawelHermansdorfer\AppData\Local\nvim\plugin\packer_compiled.lua

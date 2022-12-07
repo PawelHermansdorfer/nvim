@@ -4,8 +4,6 @@ if not status then Schedudle_notify("Failed to load: " .. plugin_name, "error", 
 local nvim_lsp = plugin
 
 
-require('lspconfig.ui.windows').default_options.border = 'rounded'
-
 local protocol = require('vim.lsp.protocol')
 
 protocol.CompletionItemKind = {
@@ -36,6 +34,7 @@ protocol.CompletionItemKind = {
     '', -- TypeParameter
 }
 
+require('lspconfig.ui.windows').default_options.border = 'rounded'
 
 -- Set up completion using nvim_cmp with LSP source
 local capabilities = require('cmp_nvim_lsp').default_capabilities()

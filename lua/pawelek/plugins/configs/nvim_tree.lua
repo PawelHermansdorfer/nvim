@@ -34,6 +34,18 @@ plugin1.setup {
     },
 
     view = {
+        float = {
+            enable = true,
+            quit_on_focus_loss = false,
+            open_win_config = {
+                relative = "editor",
+                border = "rounded",
+                width = 30,
+                height = 35,
+                row = 1,
+                col = 1,
+            },
+        },
         width = 30,
         hide_root_folder = true,
         side = 'left',

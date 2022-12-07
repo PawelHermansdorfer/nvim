@@ -1,32 +1,6 @@
--- Iterm
--- #000000 -- BG // Black
--- #E4F0E4 -- FG // White // Selection text
--- #24303C -- Selection bg
--- #484854 -- blue
--- #6C7878 -- Cyan
--- #606C6C -- Magenta
--- #849C9C -- Green
--- #A8A8A8 -- Yellow
-
--- Neovim
--- #000000 -- b1
--- #182430 -- b2
--- #24303C -- b3
--- #303C48 -- b4
--- #E4F0E4 -- fg1 
--- #C0CCC0 -- fg2
--- #A8A8A8 -- fg3
--- #6C7878 -- fg4
--- #484854 -- ex1
--- #606C6C -- ex2
--- #849C9C -- ex3
-
-
 local M = {}
 
-function M.setup(opts)
-    vim.g.colors_name = "darkwood"
-
+local function load_darkwood()
     local plugin_name = "colorbuddy"
     local status, plugin = pcall(require, plugin_name)
     if not status then Schedudle_notify("Cannot load colorscheme, colorbuddy is not installed") return end
@@ -277,6 +251,13 @@ function M.setup(opts)
     Group.new("DiagnosticVirtualTextHint", colors.info, colors.NONE, styles.NONE)
     Group.new("DiagnosticUnderlineHint", colors.NONE, colors.NONE, styles.undercurl, colors.info)
     return M
+end
+
+
+M.setup = function(colorscheme)
+    if colorscheme == "darkwood" then
+        load_darkwood()
+    end
 end
 
 return M

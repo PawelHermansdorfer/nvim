@@ -13,5 +13,6 @@ if not status then Schedudle_notify("Error loading impatient")
 else impatient.enable_profile() end
 
 
+vim.g.colorscheme = "darkwood"
 core.setup()
 plugins.setup()

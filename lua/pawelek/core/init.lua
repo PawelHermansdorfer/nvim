@@ -3,7 +3,7 @@ local M = {}
 
 M.setup = function(opts)
     require "pawelek.core.settings"
-    require("pawelek.core.theme").setup()
+    require("pawelek.core.colors").setup()
     M.load_mappings()
 end
 

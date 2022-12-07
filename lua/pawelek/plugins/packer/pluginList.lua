@@ -87,6 +87,7 @@ M.bufferline = {
     "akinsho/bufferline.nvim",
     tag = "v2.*",
     requires = "kyazdani42/nvim-web-devicons",
+    event = "BufWinEnter",
     config = function()
         require "pawelek.plugins.configs.bufferline"
     end,

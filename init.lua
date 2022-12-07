@@ -3,13 +3,6 @@
 -- NOTE(Aa_Pawelek): Remember to install qt console
 ----------------------------------------------------------
 
--- TODO(Aa_Pawelek): Add toggleterm.nvim
--- TODO(Aa_Pawelek): Add vim-illuminate
--- TODO(Aa_Pawelek): Add nvim-dap
--- TODO(Aa_Pawelek): Check out how lunarvim loads plugins
--- TODO(Aa_Pawelek): Change vim.notify to be schedudled
--- TODO(Aa_Pawelek): Get rid of mason-lspconfig
-
 
 local core = require "pawelek.core"
 local plugins = require "pawelek.plugins"

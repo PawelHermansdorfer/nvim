@@ -5,6 +5,7 @@
 - Add vim-illuminate
 - Add nvim-dap
 - Get rid of mason-lspconfig
+- Remove auto-save notofication and add file-unsaved satus to lualine
 - https://github.com/rktjmp/lush.nvim
 - https://github.com/AlphaTechnolog/pywal.nvim
 - https://github.com/httpsterio/vscode-henna

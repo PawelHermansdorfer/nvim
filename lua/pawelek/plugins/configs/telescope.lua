@@ -13,6 +13,8 @@ plugin.setup {
             "__pycache__",
             "imgs",
             "fonts",
+            "build",
+            "dependenscies",
             "^build/",
             "^dependenscies/",
         },

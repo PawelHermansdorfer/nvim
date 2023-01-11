@@ -85,7 +85,7 @@ vim.api.nvim_create_user_command("BuildRun", function()
     local lang = vim.bo.filetype
     if data[lang] ~= nil and data[lang].run ~= nil and data[lang].build ~= nil then
         vim.api.nvim_command("split")
-        vim.api.nvim_command("term " .. lang_maps[lang].run .. "&&" .. lang_maps[lang].build)
+        vim.api.nvim_command("term " .. lang_maps[lang].build .. "&&" .. lang_maps[lang].run)
     else
         Schedudle_notify("Build and run commands not set for " .. lang, "error", { title = "Build and run" })
     end
